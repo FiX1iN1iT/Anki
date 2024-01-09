@@ -9,19 +9,29 @@
 /* Begin PBXBuildFile section */
 		CED639AC2B4DA5E200A0034C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED639AB2B4DA5E200A0034C /* AppDelegate.swift */; };
 		CED639AE2B4DA5E200A0034C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED639AD2B4DA5E200A0034C /* SceneDelegate.swift */; };
-		CED639B02B4DA5E200A0034C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED639AF2B4DA5E200A0034C /* ViewController.swift */; };
 		CED639B52B4DA5E600A0034C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED639B42B4DA5E600A0034C /* Assets.xcassets */; };
 		CED639B82B4DA5E600A0034C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED639B62B4DA5E600A0034C /* LaunchScreen.storyboard */; };
+		CED639D32B4DA92B00A0034C /* CardsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED639CD2B4DA92B00A0034C /* CardsPresenter.swift */; };
+		CED639D42B4DA92B00A0034C /* CardsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED639CE2B4DA92B00A0034C /* CardsRouter.swift */; };
+		CED639D52B4DA92B00A0034C /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED639CF2B4DA92B00A0034C /* CardsViewController.swift */; };
+		CED639D62B4DA92B00A0034C /* CardsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED639D02B4DA92B00A0034C /* CardsProtocols.swift */; };
+		CED639D72B4DA92B00A0034C /* CardsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED639D12B4DA92B00A0034C /* CardsInteractor.swift */; };
+		CED639D82B4DA92B00A0034C /* CardsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED639D22B4DA92B00A0034C /* CardsContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CED639A82B4DA5E200A0034C /* Anki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED639AB2B4DA5E200A0034C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CED639AD2B4DA5E200A0034C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CED639AF2B4DA5E200A0034C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CED639B42B4DA5E600A0034C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CED639B72B4DA5E600A0034C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CED639B92B4DA5E600A0034C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED639CD2B4DA92B00A0034C /* CardsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsPresenter.swift; sourceTree = "<group>"; };
+		CED639CE2B4DA92B00A0034C /* CardsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsRouter.swift; sourceTree = "<group>"; };
+		CED639CF2B4DA92B00A0034C /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+		CED639D02B4DA92B00A0034C /* CardsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsProtocols.swift; sourceTree = "<group>"; };
+		CED639D12B4DA92B00A0034C /* CardsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsInteractor.swift; sourceTree = "<group>"; };
+		CED639D22B4DA92B00A0034C /* CardsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,27 @@
 		CED639AA2B4DA5E200A0034C /* Anki */ = {
 			isa = PBXGroup;
 			children = (
+				CED639CC2B4DA90700A0034C /* CardsScene */,
 				CED639AB2B4DA5E200A0034C /* AppDelegate.swift */,
 				CED639AD2B4DA5E200A0034C /* SceneDelegate.swift */,
-				CED639AF2B4DA5E200A0034C /* ViewController.swift */,
 				CED639B42B4DA5E600A0034C /* Assets.xcassets */,
 				CED639B62B4DA5E600A0034C /* LaunchScreen.storyboard */,
 				CED639B92B4DA5E600A0034C /* Info.plist */,
 			);
 			path = Anki;
+			sourceTree = "<group>";
+		};
+		CED639CC2B4DA90700A0034C /* CardsScene */ = {
+			isa = PBXGroup;
+			children = (
+				CED639CD2B4DA92B00A0034C /* CardsPresenter.swift */,
+				CED639CE2B4DA92B00A0034C /* CardsRouter.swift */,
+				CED639CF2B4DA92B00A0034C /* CardsViewController.swift */,
+				CED639D02B4DA92B00A0034C /* CardsProtocols.swift */,
+				CED639D12B4DA92B00A0034C /* CardsInteractor.swift */,
+				CED639D22B4DA92B00A0034C /* CardsContainer.swift */,
+			);
+			path = CardsScene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,9 +157,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CED639B02B4DA5E200A0034C /* ViewController.swift in Sources */,
+				CED639D72B4DA92B00A0034C /* CardsInteractor.swift in Sources */,
+				CED639D32B4DA92B00A0034C /* CardsPresenter.swift in Sources */,
+				CED639D52B4DA92B00A0034C /* CardsViewController.swift in Sources */,
 				CED639AC2B4DA5E200A0034C /* AppDelegate.swift in Sources */,
+				CED639D42B4DA92B00A0034C /* CardsRouter.swift in Sources */,
+				CED639D62B4DA92B00A0034C /* CardsProtocols.swift in Sources */,
 				CED639AE2B4DA5E200A0034C /* SceneDelegate.swift in Sources */,
+				CED639D82B4DA92B00A0034C /* CardsContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
